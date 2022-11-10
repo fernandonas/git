@@ -1,4 +1,22 @@
 
-Remover último commit:
-Commit com nome errado
+Para remover último commit:
+
+git reset HEAD~1 < Vai voltar o último commit.
+
+git push -f <  Vai dar um push sem o ultimo commit (- f força a dar o push).
+
+Renomear último commit:
+
+git commit --amend -m "Nova mensagem" < Esse comando deve ser utilizado caso não tenha sido feito o push.
+
+
+Caso o commit já tenha sido feito push:
+
+git reset HEAD~1 < para voltar o último commit.
+
+git add . < vai adicionar os arquivos para staged.
+
+git commit -m "Nova descrição do commit" < Nova descrição para o commit.
+
+git push -f < Para reenviar o commit.
 <router-outlet></router-outlet>
