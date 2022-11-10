@@ -20,6 +20,13 @@ git commit -m "Nova descrição do commit" < Nova descrição para o commit.
 
 git push -f < Para reenviar o commit.
 
+Remover uma branch local:
 
-Teste
-<router-outlet></router-outlet>
+git branch -d nome da branch
+
+A opção -d excluirá o branch somente se você já fez o push e o merge com o branch remoto. 
+Use a opção -D em vez disso se quiser forçar a exclusão do branch, mesmo que você ainda não tenha feito o push e o merge com ele.
+
+Remover branch remoto:
+
+git push origin --delete nomeDaBranch
